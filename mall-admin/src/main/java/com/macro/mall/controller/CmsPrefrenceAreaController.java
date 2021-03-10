@@ -28,6 +28,7 @@ public class CmsPrefrenceAreaController {
     @RequestMapping(value = "/listAll", method = RequestMethod.GET)
     @ResponseBody
     public CommonResult<List<CmsPrefrenceArea>> listAll() {
+        int aa = 11;
         List<CmsPrefrenceArea> prefrenceAreaList = prefrenceAreaService.listAll();
         return CommonResult.success(prefrenceAreaList);
     }
