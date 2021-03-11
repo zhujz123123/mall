@@ -29,6 +29,7 @@ public class CmsPrefrenceAreaController {
     @ResponseBody
     public CommonResult<List<CmsPrefrenceArea>> listAll() {
         int aa = 12;
+        int bb = 13;
         List<CmsPrefrenceArea> prefrenceAreaList = prefrenceAreaService.listAll();
         return CommonResult.success(prefrenceAreaList);
     }
